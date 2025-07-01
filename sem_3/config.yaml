@@ -1,5 +1,14 @@
-# Конфигурация тестов
-archive_type: 7z  # Поддерживаемые типы: 7z, zip, tar, gzip
+# Конфигурация путей
+paths:
+  base_dir: ".."  # Относительно расположения config.yaml
+  data_dir: "data"
+  test_dir: "test_dir"
+  archive_file: "test_archive"  # Без расширения - оно добавится автоматически
+  extract_dir: "extracted"
+
+# Конфигурация архива
+archive:
+  type: 7z  # Поддерживаемые типы: 7z, zip, tar, gzip
 
 # Тестовые файлы
 test_files:
