@@ -1,0 +1,24 @@
+# Конфигурация тестов
+archive_type: 7z  # Поддерживаемые типы: 7z, zip, tar, gzip
+
+# Тестовые файлы
+test_files:
+  - path: "file1.txt"
+    content: "Содержимое файла 1"
+    type: "text"
+    
+  - path: "file2.txt"
+    content: "Содержимое файла 2"
+    type: "text"
+    
+  - path: "binary.dat"
+    content: "00010203FF"  # Шестнадцатеричное представление
+    type: "binary"
+    
+  - path: "subdir/file3.txt"
+    content: "Файл в поддиректории"
+    type: "text"
+    
+  - path: "empty_file.txt"
+    content: ""
+    type: "binary"
