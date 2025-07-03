@@ -13,7 +13,7 @@ ssh:
   host: "localhost"
   port: 22
   user: mig2
-  passwd: mig6013
+  passwd: 11
   keyfile: null
 
 test_files:
