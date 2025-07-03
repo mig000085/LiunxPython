@@ -1,0 +1,43 @@
+paths:
+  base_dir: ".."
+  data_dir: "data"
+  test_dir: "/home/mig2/test_files"
+  extract_dir: "/home/mig2/extracted"
+  perf_archive_dir: "/home/mig2/perf_archives"
+
+archive:
+  type: "7z"
+  file: "/home/mig2/test_archive.7z"
+
+ssh:
+  host: "localhost"
+  port: 22
+  user: mig2
+  passwd: mig6013
+  keyfile: null
+
+test_files:
+  - path: "text_file.txt"
+    type: "text"
+    content: "This is a test text file"
+
+  - path: "binary_file.bin"
+    type: "binary"
+    content: "DEADBEEF"
+
+performance:
+  test_cases:
+    - name: "5_files_x_2MB"
+      file_sizes: ["2MB", "2MB", "2MB", "2MB", "2MB"]
+      total_size: 10
+      file_count: 5
+
+    - name: "2_files_x_5MB"
+      file_sizes: ["5MB", "5MB"]
+      total_size: 10
+      file_count: 2
+
+    - name: "Single_10MB"
+      file_sizes: ["10MB"]
+      total_size: 10
+      file_count: 1
